@@ -22,7 +22,7 @@ public:
 	Player(Vec2 pos, float radius, float speed);
 	~Player();
 	void Initial(Vec2 pos, float radius, float speed);
-	void Update(char* keys, char* preKeys);
+	void Update(char* keys);
 	void Draw();
 
 };

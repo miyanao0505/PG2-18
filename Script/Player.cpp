@@ -31,7 +31,7 @@ void Player::Initial(Vec2 pos, float radius, float speed)
 }
 
 // 動作処理
-void Player::Update(char* keys, char* preKeys)
+void Player::Update(char* keys)
 {
 	_velocity = { 0, 0 };
 
@@ -65,7 +65,7 @@ void Player::Update(char* keys, char* preKeys)
 	_pos.y = MyTools::Clamp(_pos.y, _radius, 720 - _radius);
 
 	// キー入力処理
-	if (keys[DIK_SPACE] && !preKeys[DIK_SPACE] && _bulletTimer <= 0)
+	if (keys[DIK_SPACE] && _bulletTimer <= 0)
 	{
 		for (int i = 0; i < _bulletNum; i++)
 		{

@@ -45,7 +45,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		}
 
 		// プレイヤーの動作
-		playerObj->Update(keys, preKeys);
+		playerObj->Update(keys);
 
 		// 敵の動作
 		enemyObjA->Update();
